@@ -1,0 +1,32 @@
+{
+   "extends": "stylelint-config-standard",
+    "ignoreFiles": "./less/reset.less",
+    "defaultSeverity": "error",
+    "rules":   
+   {
+    "rule-empty-line-before":null,
+    "no-extra-semicolons": true,
+    "function-url-quotes": "always",
+    "max-empty-lines": 2,
+    "color-no-hex": true,
+    "color-no-invalid-hex": true,
+    "no-eol-whitespace": null,
+    "string-quotes": "double",
+    "font-family-no-duplicate-names": true,
+    "color-named": "never",
+    "declaration-property-value-blacklist": [
+      {
+        "/^color/": ["/^rgb/","/^hsl"]
+      }
+    ],
+    "selector-class-pattern": ["^[a-z]+([a-z0-9]?|[a-z0-9\\-]*[a-z0-9])$",
+    {
+        "message": "Please name CSS classes like this: 'my-class-name'",
+    }
+    ],
+   "plugin/class-name-no-underscore-allowed":true,
+   },
+    "plugins" :[
+      "./custom-rules/class.js",
+    ]
+}

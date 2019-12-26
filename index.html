@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>postcss contentstack</title>
+    <link rel="stylesheet" href="dest/index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="main_div">
+      <header>
+        <div class="header_contentstack_logo">
+          <img
+            src="./images/cs.png"
+            alt="contentstack_logo"
+            class="contentstack-logo"
+          />
+        </div>
+
+        <div class="display_stack_name">
+          <p class="stack_name">Neon Research labs</p>
+          <i class="fa fa-angle-down icon-angle-down"></i>
+        </div>
+        <div class="header_navigation_list">
+          <ul class="menu_list">
+            <li class="list_name">Dashboard</li>
+            <li class="list_name"><a id="link_for_entries">Entries</a></li>
+            <li class="list_name">Assets</li>
+            <li class="list_name"><button>Publish Queue</button></li>
+            <li class="list_name"><button>Releases</button></li>
+            <li class="list_name">Settings</li>
+            <i class="fas fa-bars" onclick="DisplayList()"></i>
+          </ul>
+        </div>
+        <div class="header_right_images">
+          <img src="./images/notes.png" class="right_images" />
+          <img src="images/question_mark.png" class="right_images" />
+          <img src="./images/ac.jpeg" class="right_images" />
+        </div>
+      </header>
+      <div class="main_section">
+        <section class="entries-section">
+          <div class="entry-title">
+            <p>Entries</p>
+          </div>
+          <div class="search_entries">
+            <span class="fa fa-search search_icon"></span>
+            <span
+              ><input type="text" name="search" placeholder="Search entries"
+            /></span>
+          </div>
+          <div class="advance_button">
+            <button class="adv-btn">Advanced</button>
+          </div>
+          <div class="dropdown-for-language">
+            <span class="display_language">English-United States</span>
+            <span class="fa fa-angle-down icon-angle-down"></span>
+          </div>
+          <div class="button-for-new-entry">
+            <button class="new-entry-btn">New Entry</button>
+          </div>
+        </section>
+        <div class="main_page_data">
+          <div class="display-content-types">
+            <section class="search-content-types common-spacing-div">
+              <span>Content Types</span>
+              <span class="fa fa-search search_icon"></span>
+            </section>
+            <section class="white-bg-section common-spacing-div">
+              <p class="content-type-heading">All Content Types</p>
+              <p class="row-description row-small-font">
+                This Content Type will contain all the landing Pages
+              </p>
+            </section>
+            <div class="common-row common-spacing-div">
+              <p class="content-type-name">Blog</p>
+              <p class="row-description ">Modified by : Richton Wins</p>
+            </div>
+            <div class="common-row common-spacing-div">
+              <p class="content-type-name">Categories</p>
+              <p class="row-description ">Modified by : Richton Wins</p>
+            </div>
+            <div class="common-row common-spacing-div">
+              <p class="content-type-name">Products</p>
+              <p class="row-description">Modified by : Richton Wins</p>
+            </div>
+            <div class="common-row common-spacing-div">
+              <p class="content-type-name">Product Home</p>
+              <p class="row-description">Modified by : Richton Wins</p>
+            </div>
+          </div>
+          <div class="display-all-entries">
+            <section>
+              <span class="span-entries-title">Showing 1-10 of 32 entries</span>
+              <span class="filter-image-container"
+                ><img src="./images/filter.png" class="filter-image"
+              /></span>
+            </section>
+            <div class="filter-div">
+              <section>
+                <p class="title">Status</p>
+                <input type="checkbox" name="option-1" value="1" />
+                Published<br />
+                <input type="checkbox" name="option-2" value="2" />
+                Unpublished<br />
+                <input type="checkbox" name="option-3" value="3" /> Scheduled
+                Publish<br />
+                <input type="checkbox" name="option-4" value="4" /> Scheduled
+                Unpublish<br />
+                <input type="checkbox" name="option-5" value="5" />
+                Deployed<br />
+                <input type="checkbox" name="option-6" value="6" />Scheduled
+                Deployed<br />
+                <input type="checkbox" name="option-7" value="7" /> Deleted
+                <br />
+                <input type="checkbox" name="option-8" value="8" /> Cancelled
+                <br />
+                <input type="checkbox" name="option-9" value="9" /> Failed
+                <br />
+                <input type="checkbox" name="option-10" value="10" /> In
+                Progress
+                <br />
+                <input type="checkbox" name="option-11" value="11" /> Pending
+                <br />
+              </section>
+              <section>
+                <p class="title">Enviornment</p>
+                <input type="checkbox" name="option-1" value="1" /> cse
+                <br />
+              </section>
+              <section>
+                <p class="title">Users</p>
+                <input type="checkbox" name="option-1" value="1" /> Me
+                <br />
+              </section>
+              <section>
+                <p class="title">Languages</p>
+                <input type="checkbox" name="option-1" value="1" /> English
+                United-states
+                <br />
+              </section>
+              <section>
+                <p class="title">Content types</p>
+                <input type="checkbox" name="option-1" value="1" />Test
+                <br />
+                <input type="checkbox" name="option-2" value="2" />Demo
+                <br />
+              </section>
+            </div>
+            <div class="table-for-entry">
+              <ul>
+                <li class="row row-heading">
+                  <div class="row-title">TITLE</div>
+                  <div class="row-title">CONTENT TYPE</div>
+                  <div class="row-title">MODIFIED BY</div>
+                  <div class="row-title">PUBLISH STATUS</div>
+                  <div class="row-title">
+                    <img
+                      src="./images/checked_background.png"
+                      class="table-head-image"
+                    />
+                    <span
+                      ><i class="fa fa-angle-down icon-angle-down"></i
+                    ></span>
+                  </div>
+                </li>
+                <li class="row">
+                  <div class="row-title">Astana</div>
+                  <div class="row-title">Blog</div>
+                  <div class="row-title">
+                    Richton Wins
+                    <p class="row-description">Dec 25 2018,02;30 PM</p>
+                  </div>
+                  <div class="row-title">Not Published</div>
+                  <div class="row-title"></div>
+                </li>
+                <li class="row">
+                  <div class="row-title">Cardiff</div>
+                  <div class="row-title">About us</div>
+                  <div class="row-title">
+                    Richton Wins
+                    <p class="row-description ">Dec 25 2018,02;30 PM</p>
+                  </div>
+                  <div class="row-title">Not Published</div>
+                  <div class="row-title"></div>
+                </li>
+                <li class="row">
+                  <div class="row-title">Nairobi</div>
+                  <div class="row-title">Contact us</div>
+                  <div class="row-title">
+                    Richton Wins
+                    <p class="row-description ">Dec 25 2018,02;30 PM</p>
+                  </div>
+                  <div class="row-title">Not Published</div>
+                  <div class="row-title"></div>
+                </li>
+                <li class="row">
+                  <div class="row-title">New Port</div>
+                  <div class="row-title">Portfolio</div>
+                  <div class="row-title">
+                    Richton Wins
+                    <p class="row-description row-small-font">
+                      Dec 25 2018,02;30 PM
+                    </p>
+                  </div>
+                  <div class="row-title">Not Published</div>
+                  <div class="row-title"></div>
+                </li>
+                <li class="row">
+                  <div class="row-title">Osaka</div>
+                  <div class="row-title">Home</div>
+                  <div class="row-title">
+                    Richton Wins
+                    <p class="row-description">Dec 25 2018,02;30 PM</p>
+                  </div>
+                  <div class="row-title">Not Published</div>
+                  <div class="row-title"></div>
+                </li>
+                <li class="row">
+                  <div class="row-title">Sacramento</div>
+                  <div class="row-title">Careers</div>
+                  <div class="row-title">
+                    Richton Wins
+                    <p class="row-description">Dec 25 2018,02;30 PM</p>
+                  </div>
+                  <div class="row-title">Not Published</div>
+                  <div class="row-title"></div>
+                </li>
+                <li class="row">
+                  <div class="row-title">San Deigo</div>
+                  <div class="row-title">Community</div>
+                  <div class="row-title">
+                    Richton Wins
+                    <p class="row-description ">Dec 25 2018,02;30 PM</p>
+                  </div>
+                  <div class="row-title">Not Published</div>
+                  <div class="row-title"></div>
+                </li>
+              </ul>
+            </div>
+            <section class="span-pagination">
+              <span class="pagination_span_tag"
+                >|<i class="fa fa-angle-left fa-fa-sidebars"></i
+              ></span>
+              <span class="pagination_span_tag"
+                ><i class="fa fa-angle-left fa-fa-sidebars"></i
+              ></span>
+              <span class="pagination_span_tag"
+                >Page 1
+                <span class="pagination_span_tag"
+                  ><i class="fa fa-angle-down fa-fa-down"></i></span
+              ></span>
+              <span class="pagination_span_tag"
+                ><i class="fa fa-angle-right fa-fa-sidebars"></i
+              ></span>
+              <span class="pagination_span_tag"
+                ><i class="fa fa-angle-right fa-fa-sidebars"></i>|</span
+              >
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/index-min.js" type="text/javascript"></script>
+</html>

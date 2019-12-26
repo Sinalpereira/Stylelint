@@ -1,0 +1,1 @@
+function DisplayList(){$(".list_name").toggle()}$(document).ready(function(){$(".filter-image-container").click(function(){$(".filter-div").toggleClass("hide-div");var e=document.querySelector(".table-for-entry");"table-for-entry"===e.className?e.classList.add("width-75"):"table-for-entry width-75"===e.className&&(e.className="table-for-entry")})});
