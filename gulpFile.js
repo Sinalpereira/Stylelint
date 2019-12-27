@@ -11,7 +11,7 @@ var stylelint = require("gulp-stylelint");
 var sortAlphabetically = require("postcss-sort-alphabetically");
 var cssSorter = require("css-declaration-sorter");
 
-gulp.task("css", function() {
+gulp.task("css", function () {
   var plugins = [autoprefixer(), cssSorter()];
   gulp
     .src("./less/index.less")
@@ -23,7 +23,7 @@ gulp.task("css", function() {
 });
 
 //  Script task
-gulp.task("all-js", function() {
+gulp.task("all-js", function () {
   return gulp
     .src("./index.js")
     .pipe(minify())
@@ -31,7 +31,7 @@ gulp.task("all-js", function() {
   //.pipe(notify("Js compilation done"));
 });
 //Csslint Task
-gulp.task("csslint", function() {
+gulp.task("csslint", function () {
   return gulp
     .src("./less/index.less")
     .pipe(less())
@@ -41,7 +41,7 @@ gulp.task("csslint", function() {
 });
 
 // EsLint task
-gulp.task("eslint", function() {
+gulp.task("eslint", function () {
   return gulp
     .src("./index.js")
     .pipe(
@@ -57,7 +57,7 @@ gulp.task("eslint", function() {
 });
 
 // Stylelint tasks
-gulp.task("stylelint", function() {
+gulp.task("stylelint", function () {
   return gulp.src("./less/*.less").pipe(
     stylelint({
       reporters: [
@@ -72,7 +72,7 @@ gulp.task("stylelint", function() {
 });
 
 // watch tasks
-gulp.task("watch", function() {
+gulp.task("watch", function () {
   gulp.watch("./less/*.less", ["css"]);
   gulp.watch("./index.js", ["all-js"]);
   gulp.watch("./less/*.less", ["stylelint"]);

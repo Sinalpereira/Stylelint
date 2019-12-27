@@ -14,7 +14,7 @@
     "string-quotes": "double",
     "font-family-no-duplicate-names": true,
     "color-named": "never",
-    "declaration-property-value-blacklist": [
+    "declaration-property-value-blacklist": [   
       {
         "/^color/": ["/^rgb/","/^hsl"]
       }

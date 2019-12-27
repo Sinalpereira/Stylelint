@@ -12,7 +12,7 @@ module.exports = stylelint.createPlugin(ruleName, function(enabled) {
   return function(root, result) {
     root.walkDecls(function(decl) {
       if (decl.prop === "cursor") {
-        stylelint.utils.report({
+        stylelint.utils.report({   
           result,
           ruleName,
           message: messages.expected,
