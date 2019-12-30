@@ -24,9 +24,9 @@
         "message": "Please name CSS classes like this: 'my-class-name'",
     }
     ],
-   "plugin/class-name-no-underscore-allowed":true,
+   "plugin/avoid-cursor-property":true,
    },
     "plugins" :[
-      "./custom-rules/class.js",
+      "./custom-rules/property-rule.js",
     ]
 }
